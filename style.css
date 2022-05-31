@@ -1,0 +1,42 @@
+""/* RC of R.P */
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:black;
+    min-height:100vh;
+}
+div {
+       transform-style: preserve-3d;
+}
+
+.one {
+       width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    border: 20px solid #0000ff;
+    animation: spin 2s infinite linear;
+}
+
+.two {
+       width: 160px;
+    height: 160px;
+    border-radius: 50px;
+    border: 20px solid #00ff00;
+    animation: spin 5s infinite linear;
+}
+
+.three {
+       width: 120px;
+    height: 120px;
+    border-radius: 50px;
+    border: 20px solid #ff0000;
+       animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  0% {transform: rotateX(0deg) rotateY(0deg);}
+  50%{transform: rotateX(-180deg) rotateY(180deg);}
+  90% {transform: rotateX(0deg) rotateY(0deg);}
+}
